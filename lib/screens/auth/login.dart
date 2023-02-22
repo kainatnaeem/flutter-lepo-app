@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lepo_app/screens/auth/register.dart';
 import 'package:lepo_app/screens/constants/colors.dart';
 
 import '../widgets/appbar.dart';
@@ -94,8 +95,14 @@ class LoginScreen extends StatelessWidget {
               SizedBox(
                 height: height * 0.018,
               ),
-              Text("You don't have an account?",
-                  style: TextStyle(fontSize: 16, color: MyColors.myPurpleColor)),
+              GestureDetector(
+                onTap:(){
+
+                  Navigator.push(context, MaterialPageRoute(builder:(context) => RegisterScreen()));
+                },
+                child: Text("You don't have an account?",
+                    style: TextStyle(fontSize: 16, color: MyColors.myPurpleColor)),
+              ),
         
               SizedBox(height: height * 0.04),
         //

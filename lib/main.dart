@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
      
       ),
-      home: const OtpScreen(),
+      home: const 
+      LoginScreen(),
     );
   }
 }
